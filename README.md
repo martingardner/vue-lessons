@@ -6,6 +6,8 @@
 
 - getting started guide
   https://vuejs.org/v2/guide/
+- event modifiers
+  https://vuejs.org/v2/guide/events.html#Event-Modifiers
 
 # notes:
 

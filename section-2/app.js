@@ -49,7 +49,64 @@ new Vue({
 new Vue({
   el: "#keyboardevents",
   data: {
-    title: "Keyboard Events"
+    title: "Keyboard Events",
+    name: "Ryu"
+  },
+  methods: {
+    updateName(e) {
+      this.name = e.target.value;
+    }
+  }
+});
+
+new Vue({
+  el: "#twowaydatabinding",
+  data: {
+    title: "Two Way Data Binding",
+    name: "Ryu"
+  },
+  methods: {}
+});
+
+new Vue({
+  el: "#modifiers",
+  data: {
+    title: "Modifiers"
+  },
+  methods: {
+    logMessage() {
+      console.log("hello, world");
+    }
+  }
+});
+
+new Vue({
+  el: "#conditionalIf",
+  data: {
+    title: "Conditional If",
+    showName: true,
+    showAge: true
+  },
+  methods: {
+    toggleName() {
+      this.showName = !this.showName;
+    },
+    toggleAge() {
+      this.showAge = !this.showAge;
+    }
+  }
+});
+
+new Vue({
+  el: "#loops",
+  data: {
+    title: "Loops",
+    items: ["Mushroom", "Green Shells", "Red Shells", "Banana", "Star"],
+    ninjas: [
+      { name: "Crystal", age: 25, belt: "Black" },
+      { name: "Ryu", age: 30, belt: "Brown" },
+      { name: "Ken", age: 35, belt: "Orange" }
+    ]
   },
   methods: {}
 });
