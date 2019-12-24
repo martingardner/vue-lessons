@@ -14,3 +14,8 @@
 - v-bind:href and :href are the same thing
 - v-bind is known as a directive
 - v-on:click and @click are the same thing
+
+# create vue-cli project
+
+- vue init webpack-simple myproject
+- npm run dev localhost:8080
