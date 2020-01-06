@@ -28,3 +28,9 @@
 
 - vue/cli 2 "vue init webpack-simple myapp"
 - vue/cli 3 "vue create myapp"
+
+# Instant Prototyping
+
+- npm install -g @vue/cli-service-global
+- contains pieces to allow for instantly building a component and trying it out.
+- be in same directory of file "vue serve [filename.vue]" and it'll allow instant base setup to render a component.
