@@ -23,3 +23,8 @@
 # this.$route vs this.$router
 
 - $this.$route refers to a singular route you are on, this.\$router refers to the entire history of all the routes.
+
+# vue/cli 2 vs vue/cli 3 creation
+
+- vue/cli 2 "vue init webpack-simple myapp"
+- vue/cli 3 "vue create myapp"
