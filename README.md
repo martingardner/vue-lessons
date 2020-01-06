@@ -19,3 +19,7 @@
 
 - vue init webpack-simple myproject
 - npm run dev localhost:8080
+
+# this.$route vs this.$router
+
+- $this.$route refers to a singular route you are on, this.\$router refers to the entire history of all the routes.
