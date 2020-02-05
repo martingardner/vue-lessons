@@ -15,7 +15,12 @@ export default new Vuex.Store({
     allTodos: state => state.todos,
     getTitle: state => state.title
   },
-  mutations: {},
+  mutations: {
+    setTitle(state, payload) {
+      console.log("setTitle", state, payload);
+      state.title = payload.title;
+    }
+  },
   actions: {},
   modules: {}
 });

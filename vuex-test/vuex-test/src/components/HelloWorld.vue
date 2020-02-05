@@ -2,9 +2,8 @@
   <div class="hello">
     <div class="todos">
       <h2>{{ getTitle }}</h2>
-      <div v-for="todo in allTodos" :key="todo.id">
-        {{ todo.title }}
-      </div>
+      <div v-for="todo in allTodos" :key="todo.id">{{ todo.title }}</div>
+      <input type="input" @blur="updateTitle" />
     </div>
   </div>
 </template>
@@ -16,6 +15,15 @@ export default {
   name: "HelloWorld",
   data() {
     return {};
+  },
+  methods: {
+    updateTitle(e) {
+      console.log("updateTitle", e.target.value);
+      this.$store.commit({
+        type: "setTitle",
+        title: e.target.value
+      });
+    }
   },
   computed: mapGetters(["allTodos", "getTitle"])
 };
